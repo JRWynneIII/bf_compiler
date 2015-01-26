@@ -33,6 +33,6 @@ main() {
   echo >> "${TEMP}"
   echo '}' >> "${TEMP}"
   gcc -o "${OUTPUT}" "${TEMP}"
-  #rm "${TEMP}"
+  rm "${TEMP}"
 }
 main "${@}"
