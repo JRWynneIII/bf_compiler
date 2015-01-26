@@ -7,8 +7,8 @@ main() {
 
   BEGIN='#include <stdio.h>
   int main(){
-  char array[100000] = {0};
-  char *ptr=array;'
+  int array[100000] = {0};
+  int *ptr=array;'
   echo "$BEGIN" > "${TEMP}"
   while read -n1 char; do
     case $char in
